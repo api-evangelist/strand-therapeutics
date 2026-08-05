@@ -1,0 +1,67 @@
+generated: '2026-08-05'
+method: probed
+source: live probes of the Strand Therapeutics corporate host
+host: https://www.strandtx.com
+note: >-
+  Every RFC 8615 discovery path probed on the only host Strand Therapeutics operates returned 404 from
+  the Webflow/Cloudflare edge. No security.txt, no OIDC or OAuth authorization-server metadata, no
+  api-catalog, no ai-plugin, and no A2A agent card at either the canonical or the legacy path. The 404
+  bodies are the site's own HTML error page (88 bytes for /.well-known/* paths), not an SPA catch-all
+  returning 200, so these are true misses rather than false positives. Recorded as evidence for the
+  x-coverage state in apis.yml; no WellKnown pointer is wired because nothing was found.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /.well-known/agent-card.json
+  status: 404
+- path: /.well-known/agent.json
+  status: 404
+other_paths:
+- path: /robots.txt
+  status: 200
+  note: served empty (zero bytes) — no directives, no sitemap declaration
+- path: /llms.txt
+  status: 404
+- path: /sitemap.xml
+  status: 404
+- path: /openapi.json
+  status: 404
+- path: /swagger.json
+  status: 404
+- path: /api-docs
+  status: 404
+- path: /docs
+  status: 404
+- path: /api
+  status: 404
+- path: /graphql
+  status: 404
+- path: /wp-json/
+  status: 404
+- path: /feed
+  status: 404
+subdomains_probed:
+- host: api.strandtx.com
+  dns: NXDOMAIN
+- host: developer.strandtx.com
+  dns: NXDOMAIN
+- host: developers.strandtx.com
+  dns: NXDOMAIN
+- host: docs.strandtx.com
+  dns: NXDOMAIN
+- host: portal.strandtx.com
+  dns: NXDOMAIN
+- host: mcp.strandtx.com
+  dns: NXDOMAIN
+- host: status.strandtx.com
+  dns: NXDOMAIN
+- host: trust.strandtx.com
+  dns: NXDOMAIN

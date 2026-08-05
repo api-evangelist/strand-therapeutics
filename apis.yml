@@ -1,17 +1,40 @@
 aid: strand-therapeutics
 name: Strand Therapeutics
-description: 'Strand Therapeutics is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Strand Therapeutics is a clinical-stage biotechnology company headquartered in Boston, Massachusetts,
+  founded by biological engineers out of MIT — including Jacob Becraft (CEO), Tasuku Kitada (President,
+  Head of R&D), Ron Weiss and Darrell J. Irvine — around what the company describes as the first mRNA
+  programming language. Strand engineers programmable genetic medicines across three named platforms:
+  SignalPath LNPs for tissue-selective delivery of mRNA payloads, SignalLock RNA which restricts
+  expression to target tissues and deactivates it elsewhere, and SignalScript RNA for self-replicating
+  and circular RNA constructs. Its clinical pipeline includes STX-001, STX-003 (systemic tumor delivery,
+  entering the clinic in 2026) and STX-005 (in vivo CAR T), targeting solid tumors, blood cancers and
+  autoimmune disease. Strand operates no developer program and publishes no API, SDK, webhook or
+  machine-readable specification of any kind; its corporate site is a static Webflow property behind
+  Cloudflare with no content API, no feed and no sitemap. It is catalogued here because it appears in
+  the API Evangelist secondary-market harvest backlog, and this profile records the honest zero.
+image: https://cdn.prod.website-files.com/695c147ac34bdf172346e992/695fc938e71f10c75f917b09_Screenshot%202026-01-08%20at%204.05.34%E2%80%AFPM%201.webp
 url: https://raw.githubusercontent.com/api-evangelist/strand-therapeutics/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: enriched
+x-tier-reason: enrichment pass 2026-08-05
 specificationVersion: '0.20'
 created: '2026-08-05'
 modified: '2026-08-05'
 tags:
 - Company
+- Biotechnology
+- Life Sciences
+- mRNA
+- Genetic Medicine
+- Immuno-Oncology
+- Oncology
+- Autoimmune
+- Cell Therapy
+- Clinical Trials
+- Pharmaceuticals
+- Healthcare
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +42,57 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/strand-therapeutics-domain-security.yml
 - type: Website
+  url: https://www.strandtx.com/
+- type: About
+  url: https://www.strandtx.com/about
+- type: Technology
+  url: https://www.strandtx.com/technology
+- type: Pipeline
+  url: https://www.strandtx.com/pipeline
+- type: Blog
+  url: https://www.strandtx.com/articles
+- type: Careers
+  url: https://www.strandtx.com/careers
+- type: Contact
+  url: mailto:partnering@strandtx.com
+- type: PrivacyPolicy
+  url: https://www.strandtx.com/legal/privacy-policy
+- type: CookiePolicy
+  url: https://www.strandtx.com/legal/cookie-policy
+- type: GitHubOrganization
+  url: https://github.com/strand-therapeutics
+- type: LinkedIn
+  url: https://www.linkedin.com/company/strandtx/
+- type: Twitter
+  url: https://x.com/StrandTx
+- type: SecondaryMarket
   url: https://forgeglobal.com/strand-therapeutics_stock/
+- type: LLMsTxt
+  url: llms/strand-therapeutics-llms.txt
+x-enrichment:
+  date: '2026-08-05'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Strand Therapeutics is a clinical-stage mRNA drug developer whose only web property is a static
+    Webflow marketing site — no api./developer./docs./portal./mcp. subdomain resolves at all, and the
+    site itself 404s on /openapi.json, /graphql, /wp-json/, /llms.txt and every /.well-known/ path.
+  evidence:
+  - url: https://www.strandtx.com/openapi.json
+    status: 404
+  - url: https://www.strandtx.com/.well-known/agent-card.json
+    status: 404
+  - url: https://www.strandtx.com/graphql
+    status: 404
+  - url: https://www.strandtx.com/wp-json/
+    status: 404
+  - url: https://www.strandtx.com/
+    status: 200
+  checked: '2026-08-05'

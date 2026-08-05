@@ -1,0 +1,45 @@
+# Strand Therapeutics
+
+> Clinical-stage biotechnology company in Boston, Massachusetts developing programmable mRNA
+> therapeutics for solid tumors, blood cancers and autoimmune disease. Strand publishes NO public API,
+> SDK, webhook, or machine-readable specification. This file is an API Evangelist catalog profile,
+> generated from the company's public website — it is not published by Strand Therapeutics.
+
+## API surface
+
+- No public API. Probed 2026-08-05: no OpenAPI, Swagger, GraphQL, AsyncAPI, MCP server, agent card,
+  or `.well-known` discovery document on any Strand Therapeutics host. No `api.`, `developer.`,
+  `docs.`, `portal.`, `mcp.` subdomain resolves. The corporate site is a static Webflow property
+  behind Cloudflare with no content API, no RSS feed, and no sitemap.
+
+## Company
+
+- [Home](https://www.strandtx.com/): Company overview and platform summary.
+- [About](https://www.strandtx.com/about): Founding out of MIT, leadership, and mission.
+- [Technology](https://www.strandtx.com/technology): SignalPath LNPs, SignalLock RNA, SignalScript RNA.
+- [Pipeline](https://www.strandtx.com/pipeline): STX-001, STX-003, STX-005 clinical programs.
+- [Articles](https://www.strandtx.com/articles): Company news and publications.
+- [Careers](https://www.strandtx.com/careers): Open roles.
+
+## Legal
+
+- [Privacy Policy](https://www.strandtx.com/legal/privacy-policy)
+- [Cookie Policy](https://www.strandtx.com/legal/cookie-policy)
+
+## Elsewhere
+
+- [GitHub organization](https://github.com/strand-therapeutics): Exists, zero public repositories.
+- [LinkedIn](https://www.linkedin.com/company/strandtx/)
+- [X](https://x.com/StrandTx)
+- [Forge Global secondary-market listing](https://forgeglobal.com/strand-therapeutics_stock/)
+
+## Contact
+
+- Partnering: partnering@strandtx.com
+- GitHub org contact: contact@strandtx.com
+
+## API Evangelist artifacts
+
+- [apis.yml](https://raw.githubusercontent.com/api-evangelist/strand-therapeutics/refs/heads/main/apis.yml): APIs.json 0.20 profile.
+- [Domain security probe](https://raw.githubusercontent.com/api-evangelist/strand-therapeutics/refs/heads/main/security/strand-therapeutics-domain-security.yml): TLS, HSTS, DNSSEC, CAA, SPF, DMARC.
+- [Well-known probe log](https://raw.githubusercontent.com/api-evangelist/strand-therapeutics/refs/heads/main/well-known/strand-therapeutics-well-known.yml): Every discovery path probed and its status.
