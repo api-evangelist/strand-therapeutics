@@ -13,6 +13,17 @@ description: >-
   machine-readable specification of any kind; its corporate site is a static Webflow property behind
   Cloudflare with no content API, no feed and no sitemap. It is catalogued here because it appears in
   the API Evangelist secondary-market harvest backlog, and this profile records the honest zero.
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://cdn.prod.website-files.com/695c147ac34bdf172346e992/695fc938e71f10c75f917b09_Screenshot%202026-01-08%20at%204.05.34%E2%80%AFPM%201.webp
 url: https://raw.githubusercontent.com/api-evangelist/strand-therapeutics/refs/heads/main/apis.yml
 x-type: company
