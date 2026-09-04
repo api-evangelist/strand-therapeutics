@@ -24,6 +24,18 @@ deliveryModel:
   - none
   generated: '2026-08-28'
   method: derived
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+  - security
+  generated: '2026-09-02'
+  method: derived
 image: https://cdn.prod.website-files.com/695c147ac34bdf172346e992/695fc938e71f10c75f917b09_Screenshot%202026-01-08%20at%204.05.34%E2%80%AFPM%201.webp
 url: https://raw.githubusercontent.com/api-evangelist/strand-therapeutics/refs/heads/main/apis.yml
 x-type: company
